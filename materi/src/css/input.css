@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=BJ+Cree:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Design System */
+.btn {
+  @apply px-4 py-2 rounded-full text-white shadow;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-800;
+}
+
+.btn-danger {
+  @apply bg-red-500;
+}
+
+@theme {
+  --color-primary: #4f46e5;
+  --color-secondary: #10b981;
+
+  --font-ucup: 'BJ Cree';
+}

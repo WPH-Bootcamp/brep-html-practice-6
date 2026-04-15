@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 1 - Pseudo Class Utilities (State)</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body class="mx-2 h-500">
+    <h1>Materi 1 - Pseudo Class Utilities (State)</h1>
+
+    <h2>1. Hover State</h2>
+    <button
+      class="bg-blue-500 hover:bg-blue-800 text-white px-5 py-2 rounded-full transition duration-300"
+    >
+      Hello Dunia
+    </button>
+
+    <h2>2. Focus State</h2>
+    <input
+      type="text"
+      class="border p-2 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+      placeholder="Type your name"
+    />
+
+    <h2>3. Active State</h2>
+    <button
+      class="bg-blue-500 hover:bg-blue-800 text-white px-5 py-2 rounded-full transition duration-300 active:bg-red-500"
+    >
+      Hello Dunia
+    </button>
+
+    <h2>4. Disabled State</h2>
+    <button
+      class="bg-blue-400 text-white px-5 py-2 rounded-full disabled:bg-gray-400 disabled:opacity-50 transition duration-300"
+      disabled
+    >
+      Hello Dunia
+    </button>
+
+    <h2>5. First and Last</h2>
+    <ul class="bg-black text-white p-4 rounded flex flex-col gap-2">
+      <li class="py-2 bg-gray-500 first:pt-0">Item 1</li>
+      <li class="py-2 bg-gray-500">Item 2</li>
+      <li class="py-2 bg-gray-500 last:pb-0">Item 3</li>
+    </ul>
+  </body>
+</html>

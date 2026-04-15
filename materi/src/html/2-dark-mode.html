@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 2 - Dark Mode</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 transition">
+    <h1 class="dark:text-white">Materi 2 - Dark Mode</h1>
+    <button
+      class="bg-blue-500 px-5 py-2 rounded-full transition duration-300 dark:bg-gray-500 dark:text-white"
+      id="toggleTheme"
+    >
+      Hello Ucup
+    </button>
+
+    <script>
+      const button = document.getElementById('toggleTheme');
+      console.log(button);
+      button.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>
